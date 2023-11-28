@@ -18,7 +18,7 @@ reboot
 ```
 
 
-Install fontconfig and Java 11 OpenJDK.
+Install fontconfig and Java OpenJDK.
 ```
 yum install fontconfig java-17-openjdk -y
 ```
@@ -69,4 +69,12 @@ Install a specific version of the Jenkins package (e.g., version 2.42xxx).
 ```
 yum install jenkins-2.426.1-1.1.noarch
 
+```
+
+Open Google chrome and run your IP with ports 8080
+```
+http://192.168.1.16:8080
+```
+
+Username shoud be `admin` and password in this path
 ```
