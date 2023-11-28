@@ -14,6 +14,10 @@ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 Update the Systme
 ```
 sudo yum upgrade -y
+```
+
+Reboot the system
+```
 reboot
 ```
 
