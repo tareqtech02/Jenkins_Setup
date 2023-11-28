@@ -76,5 +76,14 @@ Open Google chrome and run your IP with ports 8080
 http://192.168.1.16:8080
 ```
 
-Username shoud be `admin` and password in this path
+Edit the file to remove the username and passwords
+```
+vim /var/lib/jenkins/config.xml
+```
+
+Change <useSecurity>true</useSecurity> to `false`
+
+Restart the Jenkins Services
+```
+sudo systemctl restart jenkins.service
 ```
