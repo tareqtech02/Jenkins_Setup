@@ -81,7 +81,7 @@ Edit the file to remove the username and passwords
 vim /var/lib/jenkins/config.xml
 ```
 
-Change <useSecurity>true</useSecurity> to `false`
+Change `<useSecurity>true</useSecurity> to false`
 
 Restart the Jenkins Services
 ```
