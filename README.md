@@ -81,8 +81,9 @@ yum install jenkins-2.426.1-1.1.noarch
 
 Open Google chrome and run your IP with ports 8080
 ```
-http://192.168.1.16:8080
+http://<IP Address>:8080
 ```
+
 
 Get the Admin Password for the Jenkins 
 ```
