@@ -1,10 +1,19 @@
 ## Ensure an internet connection is available.
 
+Install OpenJDK 11
+```
+yum install java-11-openjdk-devel -y
+```
+
+Check the installed Java version.
+```
+java --version
+```
+
 Download and add the Jenkins repository configuration file to /etc/yum.repos.d/.
 ```
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 ```
-
 
 Import the Jenkins repository GPG key.
 ```
@@ -21,19 +30,6 @@ Reboot the system
 reboot
 ```
 
-
-Install OpenJDK 11
-```
-yum install java-11-openjdk-devel -y
-```
-
-
-Check the installed Java version.
-```
-java --version
-```
-
-
 Install Jenkins using Yum.
 ```
 yum install jenkins -y
@@ -43,8 +39,6 @@ Reload the system
 ```
 sudo systemctl daemon-reload
 ```
-
-
 
 Check the status of the Jenkins service.
 ```
