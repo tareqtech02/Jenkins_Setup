@@ -1,5 +1,25 @@
 ## Ensure an internet connection is available.
 
+```
+ping google.com -c 5
+```
+
+## Ensure to update the System
+
+
+Update the Systme
+```
+sudo yum upgrade -y
+```
+
+Reboot the system
+```
+reboot
+```
+
+## Follow these steps to download and install Jenkins
+
+
 Install OpenJDK 11
 ```
 yum install java-11-openjdk-devel -y
