@@ -22,9 +22,9 @@ reboot
 ```
 
 
-Install fontconfig and Java OpenJDK.
+Install OpenJDK 11
 ```
-yum install fontconfig java-17-openjdk -y
+yum install java-11-openjdk-devel -y
 ```
 
 
@@ -48,6 +48,8 @@ sudo systemctl daemon-reload
 
 Check the status of the Jenkins service.
 ```
+systemctl start jenkins.service
+systemctl enable jenkins.service
 systemctl status jenkins.service
 ```
 
@@ -55,6 +57,8 @@ systemctl status jenkins.service
 Check the status of the firewalld service.
 ```
 systemctl status firewalld.service
+systemctl stop firewalld.service
+systemctl disable firewalld.service
 ```
 
 
@@ -80,14 +84,7 @@ Open Google chrome and run your IP with ports 8080
 http://192.168.1.16:8080
 ```
 
-Edit the file to remove the username and passwords
+Get the Admin Password for the Jenkins 
 ```
-vim /var/lib/jenkins/config.xml
-```
-
-Change `<useSecurity>true</useSecurity> to false`
-
-Restart the Jenkins Services
-```
-sudo systemctl restart jenkins.service
+cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
